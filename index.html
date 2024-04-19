@@ -2,11 +2,12 @@
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>カメラビデオストリーム</title>
 </head>
 <body>
     <h1>カメラビデオストリーム表示</h1>
-    <video id="video" width="640" height="480" autoplay></video>
+    <video id="video" width="640" height="480" autoplay playsinline></video> <!-- playsinline属性を追加 -->
     <script src="script.js"></script>
 </body>
 </html>
