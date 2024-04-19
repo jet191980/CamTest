@@ -4,8 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // ビデオを再生するためのユーザーインタラクションを処理する
     video.addEventListener('click', function() {
         if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-            // 背面カメラを使用するように設定
-            navigator.mediaDevices.getUserMedia({ video: { facingMode: "environment" } })
+            navigator.mediaDevices.getUserMedia({ video: { facingMode: "user" } }) // フロントカメラを指定
                 .then(function(stream) {
                     video.srcObject = stream;
                 })
